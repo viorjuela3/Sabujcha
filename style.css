@@ -1,0 +1,30 @@
+.productos{
+    background-image: url(./Imagenes/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+}
+
+.contenedor1{
+    background-color: aqua;
+    aspect-ratio: 0.94;
+    background-size: cover;
+}
+
+.producto1{
+    background-image: url(./Imagenes/product-detalis-l1.jpg);
+    
+    
+}
