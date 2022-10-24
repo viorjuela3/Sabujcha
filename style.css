@@ -1,3 +1,98 @@
+* {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    box-sizing:
+    border-box; 
+  }
+
+h1, h2, h3{
+
+    font-family: 'Playfair Display', serif;
+}
+
+
+p{
+    font-family: 'Lora', serif;
+
+}
+
+
+
+/* font-family: 'Work Sans', sans-serif; */
+
+
+/*nav*/
+
+
+.container-header{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin: 30px 10px;
+  position: relative;
+
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+
+
+.opcion{
+    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+    /* font-family: ; */
+}
+
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+}
+
+/* header */
+.giro{
+    background-image: url(./Imagenes/slider-2.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    
+
+}
+
+
+/* banner */
+
+.banner{
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+
+}
+
+.off1{
+    background-image: url(./Imagenes/banner-1.png);
+}
+
+.off2{
+    background-image: url(./Imagenes/banner-2.png);
+}
+
+
+
+/* section1 */
+
 .section-latest{
     background-image: url(./Imagenes/bg-1.jpg);
     background-repeat: no-repeat;
@@ -24,31 +119,45 @@
 
 .product1{
     background-image: url(./Imagenes/product-detalis-l1.jpg);
-    
+
 }
 
 .product2{
     background-image: url(./Imagenes/product-detalis-l2.jpg);
-    
+
 }
 
 .product3{
     background-image: url(./Imagenes/product-detalis-l3.jpg);
-    
+
 }
 
 .product4{
     background-image: url(./Imagenes/product-detalis-l4.jpg);
-    
+
+}
+
+.anuncio{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+
+}
+.img-anuncio{
+  background-image: url(./Imagenes/testi.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: bottom;
+  padding: 100px;
 }
 
 /* section 2 new products */
 
-.new-product{
-    background-color: aqua;
-    background-repeat: no-repeat;
+.section-new-product{
     background-size: cover;
-    background-position: bottom;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,7 +165,7 @@
 }
 
 
-.product-section2{
+.product-new{
     width: 80%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -88,7 +197,7 @@
 
 .product-new5{
     background-image: url(./Imagenes/product-2.jpg);
-}   
+}
 
 .product-new6{
     background-image: url(./Imagenes/product-4.jpg);
@@ -100,4 +209,105 @@
 
 .product-new8{
     background-image: url(./Imagenes/product-8.jpg);
+}
+
+/* section3 latest new */
+
+
+.section3-latest-new{
+    background-image: url(./Imagenes/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-latest-new{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+.cont-latest-new{
+    aspect-ratio: 0.92;
+    background-size: cover;
+}
+
+.product-latest-new1{
+    background-image: url(./Imagenes/blog-single-1.jpg);
+
+}
+
+.product-latest-new2{
+    background-image: url(./Imagenes/blog-single-2.jpg);
+
+}
+
+
+.product-latest-new3{
+    background-image: url(./Imagenes/blog-single-3.jpg);
+
+}
+
+/* clientes */
+
+
+
+.section-clientes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp-clientes{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+
+}
+
+.cont-clientes{
+    aspect-ratio: 2.07;
+    background-size: cover;
+}
+
+
+.clientes1{
+    background-image: url(./Imagenes/1.jpg)
+
+}
+
+.clientes2{
+    background-image: url(./Imagenes/2.jpg)
+
+}
+
+.clientes3{
+    background-image: url(./Imagenes/3.jpg)
+
+}
+
+.clientes4{
+    background-image: url(./Imagenes/4.jpg)
+
+}
+
+.clientes5{
+    background-image: url(./Imagenes/5.jpg)
+
+}
+
+/* footer */
+
+.container-footer{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+
 }
