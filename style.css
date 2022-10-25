@@ -31,12 +31,29 @@ p{
   align-items: center;
   margin: 30px 10px;
   position: relative;
+  padding: 0px 50px;;
 
+}
+
+@media (max-width:768px){
+    .container-header{
+        justify-content: flex-end;
+        
+    }
+    
 }
 
 .menu{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    
+}
+
+@media (max-width:768px){
+    .menu{
+        display:none;
+
+    }
     
 }
 
@@ -53,36 +70,103 @@ p{
     position: absolute;
     top: 50%;
     left: 50%;
-    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
 }
+
+
+@media (max-width:768px){
+    .logo{
+        left: 5%;
+        transform: translate(-0%, -50%);
+    }
+    
+}
+
+.iconos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap:10px;
+}
+
+@media (min-width:768px){
+    .iconos{
+        grid-template-columns: repeat(2, 1fr);
+    }   
+}
+
+
+.carro-compras, .navegacion-movil{
+    width: 2rem;
+    height: 2rem;
+    
+}
+
+@media (min-width:768px){
+    .navegacion-movil{
+       display: none;
+    }   
+}
+
 
 /* header */
 .giro{
     background-image: url(./Imagenes/slider-2.jpg);
     background-repeat: no-repeat;
-    background-position:center;
+    background-position:bottom;
+    background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 1200px;
-    margin: 0 auto;
-    height: 100%;
-    
-
+    align-items: center;   
+    height:720px; 
 }
+
+
+@media (max-width:768px){
+    .giro{
+       height:400px;
+    }   
+}
+
+.giro h1, p{
+    text-align: center;
+    
+}
+
 
 
 /* banner */
 
 .banner{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    padding: 35px;
+    width: 70%;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 5% 0%;
+
 
 }
 
+.sale{
+    width: 100%;
+    aspect-ratio: 2.1;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+       
+}
+
+
 .off1{
     background-image: url(./Imagenes/banner-1.png);
+    
+    
 }
 
 .off2{
@@ -311,3 +395,4 @@ p{
     grid-template-columns: repeat(4, 1fr);
 
 }
+
